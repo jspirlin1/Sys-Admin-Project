@@ -55,3 +55,16 @@ Third, almost all software is kept in-house, and none of the company’s service
 Fourth, customer data is stored on a single file server, and there are no backups of this critical customer data. To avoid unintentional data loss or theft, I would generate backups of these crucial files from both the file server and the cloud. It could also be a good idea to redistribute security groups and file permissions so that only domain administrators have full access to files and folders. All users may receive permissions based on their roles within the organization and the relevant GPOs.
 
 Finally, the company generates a lot of revenue and is rapidly growing. They’re expecting to hire hundreds of new employees in the next year or so, and I may not be able to scale my operations at the pace at which I’m working. I believe that since the company is planning on expansion and since they are generating a lot of revenue, I would recommend to the company that they get extra help from at least two more IT members to keep my job running efficiently and effectively. While another member could perform the same duties as me in ensuring that all services are current and operating efficiently, one member could manage the helpdesk and provide any technical support that any employee requires.
+
+Scenario 3: 
+In terms of managing infrastructure, Dewgood undoubtedly needs assistance.
+
+First, computers are purchased directly in a physical store on the day that an employee is hired. This is due to budgetary reasons, as they can’t keep extra stock in the store.
+
+Second, the company doesn’t currently have a messaging system in place. I can install a free instant messaging service for businesses such as Skype, Microsoft Teams, or Slack for any problems that may arise, and to minimize time consumption.
+
+Third, I’m responsible for installing all the software a new employee needs on their machine and mapping the file server to their computer. Since the company has Active Directory, I can install a GPO(Group Policy Object) within it, which will automatically install the software on the new employees' computers, as well as map the file server to their computers.
+
+Fourth, when an employee leaves, they’re currently not disabled in the directory service. I can use Active Directory to set up organizational units (OUs) to simplify and automate the process of adding and deleting users and groups.
+
+Finally, there are nightly backups on the file server. I store this information on a disk backup and take it home with me every day to keep it safe in case something happens onsite. I can purchase and install a cloud backup service for businesses to ensure added safety of the company’s files. In addition to Active Directory being already installed, I would also install another centralized management service, such as OpenLDAP for added security. In case of a data breach, I could always change or remove the data that’s on the server.
